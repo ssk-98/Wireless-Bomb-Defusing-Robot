@@ -1,4 +1,4 @@
-#include <ESP8266WiFi.h> 
+#include <ESP8266WiFi.h>  //header file to include NodeMCU libraries
 #include<Servo.h>
 
 char* ap ="poco"; //Enter the Phone wifi name
