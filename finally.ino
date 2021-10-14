@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h> 
 #include<Servo.h>
 
-char* ap ="poco"; //Phone wifi name
+char* ap ="poco"; //Enter the Phone wifi name
 char* pass="243363592";
 String recv="";
 int count=0;
