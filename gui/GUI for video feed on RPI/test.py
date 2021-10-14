@@ -82,7 +82,7 @@ def use_default():
 
     
 top=Tk()
-top.title("BOMB DIFFUSION BOT")
+top.title("WIRELESS BOMB DEFUSING ROBOT")
 b1=Radiobutton(top, text="USE CUSTOM DIMENSIONS",bg='yellow',value=1,command=lambda: change_dimensions(0)).place(relx=0.5,rely=0.3,anchor="center")
 b2=Radiobutton(top, text="USE DEFAULT DIMENSIONS",bg='yellow',value=2, command=use_default).place(relx=0.5,rely=0.5,anchor="center")
 b3=Button(top,text="LAUNCH LIVE FEED", bg='yellow',command=launch_live_feed).place(relx=0.5,rely=0.9,anchor="center")
