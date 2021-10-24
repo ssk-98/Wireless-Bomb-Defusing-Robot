@@ -83,6 +83,9 @@ def use_default():
 
     
 top=Tk()
+label1="CHANGE DEFAULT DIMENSIONS"
+label2="CHANGE BACKGROUND COLOR"
+label3="SETTINGS"
 top.title("WIRELESS BOMB DEFUSING BOT")
 b1=Radiobutton(top, text="USE CUSTOM DIMENSIONS",bg='yellow',value=1,command=lambda: change_dimensions(0)).place(relx=0.5,rely=0.3,anchor="center")
 b2=Radiobutton(top, text="USE DEFAULT DIMENSIONS",bg='yellow',value=2, command=use_default).place(relx=0.5,rely=0.5,anchor="center")
@@ -90,9 +93,9 @@ b3=Button(top,text="LAUNCH LIVE FEED", bg='yellow',command=launch_live_feed).pla
 
 menubar= Menu(top)
 SETTINGS=Menu(menubar, tearoff=0)
-SETTINGS.add_command(label="CHANGE DEFAULT DIMENSIONS",command=lambda: change_dimensions(1))
-SETTINGS.add_command(label="CHANGE BACKGROUND COLOR", command=change_color)
-menubar.add_cascade(label="SETTINGS",menu=SETTINGS)
+SETTINGS.add_command(label=label1,command=lambda: change_dimensions(1))
+SETTINGS.add_command(label=label2, command=change_color)
+menubar.add_cascade(label=label3,menu=SETTINGS)
 '''
 C = Canvas(top, bg="blue", height=250, width=300)
 filename = PhotoImage(file="b.png")
