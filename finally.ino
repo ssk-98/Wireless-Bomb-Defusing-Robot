@@ -21,11 +21,6 @@ int bottom_servo=0;
 
 
 void setup(){
-  //Stircle 
- // pinMode(D1,OUTPUT);// PWM motor
-  
-  //
-
   
   for(int j=0;j<4;j++)
   {pinMode(m[j],OUTPUT);
