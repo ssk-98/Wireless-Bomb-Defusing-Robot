@@ -87,10 +87,12 @@ top.title("WIRELESS BOMB DEFUSING BOT")
 b1=Radiobutton(top, text="USE CUSTOM DIMENSIONS",bg='yellow',value=1,command=lambda: change_dimensions(0)).place(relx=0.5,rely=0.3,anchor="center")
 b2=Radiobutton(top, text="USE DEFAULT DIMENSIONS",bg='yellow',value=2, command=use_default).place(relx=0.5,rely=0.5,anchor="center")
 b3=Button(top,text="LAUNCH LIVE FEED", bg='yellow',command=launch_live_feed).place(relx=0.5,rely=0.9,anchor="center")
-
+label="CHANGE DEFAULT DIMENSIONS"
+label1="CHANGE BACKGROUND COLOR"
+label2="SETTINGS"
 menubar= Menu(top)
 SETTINGS=Menu(menubar, tearoff=0)
-SETTINGS.add_command(label="CHANGE DEFAULT DIMENSIONS",command=lambda: change_dimensions(1))
+SETTINGS.add_command(label=label,command=lambda: change_dimensions(1))
 SETTINGS.add_command(label="CHANGE BACKGROUND COLOR", command=change_color)
 menubar.add_cascade(label="SETTINGS",menu=SETTINGS)
 '''
