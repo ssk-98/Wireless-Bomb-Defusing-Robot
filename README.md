@@ -1,3 +1,4 @@
 # Wireless-Bomb-Defusing-Robot
 # NodeMCU and RPI based
-hacktoberfest
+hacktoberfest 2021  
+Supporting opensource behaviour.
